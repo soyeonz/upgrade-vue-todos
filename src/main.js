@@ -3,8 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Mock from './mock'; // introduce the mock module
 
 Vue.config.productionTip = false
+
+// execute the initialization function
+Mock.start();
 
 /* eslint-disable no-new */
 new Vue({
